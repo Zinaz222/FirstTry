@@ -1,3 +1,5 @@
+package FacebookClone;
+
 import java.util.ArrayList;
 import java.util.*;
 
@@ -25,6 +27,9 @@ public class Adjacencylist <E extends Profile> {
     }
     //return the users connections
     public ArrayList<E> getConnections(){
+        for(i=0; i<connections.size(); i++){
+            System.out.println(connections(i));
+        }
         return connections;
     }
 
