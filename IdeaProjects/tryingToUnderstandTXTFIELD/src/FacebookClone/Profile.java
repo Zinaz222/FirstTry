@@ -4,11 +4,12 @@ public class Profile {
     private BufferedImage picture;
     private String name;
     private String status;
-    private ArrayList<Profile> friendProfiles;
+    private ArrayList<Profile> friendslist;
 
     /** Constructor for an instance of a profile. */
     public Profile()
     {
+
         friendslist = new ArrayList<>();
     } // end default constructor
 
@@ -16,6 +17,7 @@ public class Profile {
      @return  The profile's picture. */
     public BufferedImage getProfilePicture()
     {
+
         return picture;
     } // end getProfilePicture
 
@@ -23,6 +25,7 @@ public class Profile {
      @param newPicture  The new picture associated with the profile. */
     public void setProfilePicture(BufferedImage newPicture)
     {
+
         picture = newPicture;
     } // end setProfilePicture
 
@@ -39,6 +42,7 @@ public class Profile {
      @return  The profile's name. */
     public String getName()
     {
+
         return this.name;
     } // end getName
 
@@ -53,6 +57,7 @@ public class Profile {
      @return  The profile's status.*/
     public String getStatus()
     {
+
         return status;
     } // end getStatus
 
@@ -60,6 +65,7 @@ public class Profile {
      @return  The list of friendProfiles. */
     public ArrayList<Profile> getFriends()
     {
+
         return friendslist;
     } // end getFriends
 
@@ -67,6 +73,7 @@ public class Profile {
      @param p  The profile to be added to the list. */
     public void addFriend(Profile p)
     {
+
         friendslist.add(p);
     } // end addFriend
 
@@ -75,11 +82,13 @@ public class Profile {
      @return  True if the profile was removed. */
     public boolean removeFriend(Profile p)
     {
+
         return friendslist.remove(p);
     } // end removeFriend
 
     public String toString()
     {
+
         return name;
     } // end toString
 
@@ -88,10 +97,10 @@ public class Profile {
     {
         System.out.println(name);
         System.out.println(status);
-        if (friendslist ==0){
-            System.out.println("User has no friends :(")
-        for(String i: friendslist){
-            System.out.println(friendslist.get(i))
+        if (friendslist.size ==0){
+            System.out.println("User has no friends :(");
+        for(String i: friendslist.size){
+            System.out.println(friendslist.get(i));
         }
         }
     } // end display
