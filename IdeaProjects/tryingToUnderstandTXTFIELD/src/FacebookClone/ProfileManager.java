@@ -43,14 +43,14 @@ public class ProfileManager
     /** Adds profile to Facebook clone
      *
      *
-     @param p  Profile that'll be added to the network */
+     @param pro  Profile that is gonna be added to Facebook Clone */
 
 
-    public void addProfile(Profile p)
+    public void addProfile(Profile pro)
     {
         //add vertices for undirected graph that'll be populated with profiles
 
-        allProfiles.addVertex(p);
+        allProfiles.addVertex(pro);
 
 
     }
