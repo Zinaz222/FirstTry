@@ -140,7 +140,7 @@ public class ProfileManager
 
 
 
-    public void display(Profile initialProfile)
+    public void displayUsersInfo(Profile initialProfile)
     {
 
 
